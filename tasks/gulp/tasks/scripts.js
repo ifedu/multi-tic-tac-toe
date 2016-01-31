@@ -1,13 +1,13 @@
 module.exports = ($) => {
     'use strict'
 
-    $.gulp.task('js', () =>
+    const script = (folder) =>
         $
         .gulp
         .src([
-            `${$.dev.js}/**/*.js`,
-            `!${$.dev.js}/**/_*.js`,
-            `!${$.dev.js}/**/_**/**/*.js`
+            `${folder}/**/*.js`,
+            `!${folder}/**/_*.js`,
+            `!${folder}/**/_**/**/*.js`
         ])
         .pipe($.changed($.deploy.js))
         .pipe($.babel({
@@ -15,5 +15,8 @@ module.exports = ($) => {
         }))
         .on('error', (error) => console.log(error))
         .pipe($.gulp.dest($.deploy.js))
-    )
+
+    $.gulp.task('js-jQuery', () => script($.dev.jsJquery))
+
+    $.gulp.task('js-vanillajs', () => script($.dev.jsVanillajs))
 }

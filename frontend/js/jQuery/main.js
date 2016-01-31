@@ -9,14 +9,21 @@ $(() => {
         $(this)
         .children()
         .removeClass('hidden')
-        .attr('src', `../../../../design/assets/${xo}.png`)
+        .attr('src', `assets/${xo}.png`)
 
         const request = {
             xo
         }
 
-        $.post('../../../../backend/php/index.php', request, ((data) => {
+        $.ajax('api/php/index.php', {
+            method: 'POST',
+
+            data: {
+                xo
+            }
+        })
+        .then(function success(data) {
             console.log(data)
-        }))
+        })
     })
 })

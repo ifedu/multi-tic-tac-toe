@@ -14,7 +14,7 @@ html(lang='es')
         //-     rel='shortcut icon'
         //- )
         link(
-            href='../../css/code/stylus/main.css'
+            href='css/main.css'
             rel='stylesheet'
         )
     body
@@ -23,5 +23,7 @@ html(lang='es')
             +row()
             +row()
 
-        script(src='../../js/vendor/jquery-2.2.0.min.js')
-        script(src='../../js/jQuery/main.js')
+        if (jQuery === true)
+            script(src='js/vendor/jquery-2.2.0.min.js')
+
+        script(src='js/main.js')

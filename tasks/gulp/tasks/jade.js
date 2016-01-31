@@ -10,6 +10,7 @@ module.exports = ($) => {
             `!${$.dev.jade}/**/_**/**/*.jade`
         ])
         .pipe($.changed($.deploy.jade, {extension: '.html'}))
+        .pipe($.data((file) => $.extendJsonData(file)))
         .pipe($.jade({
             pretty: true
         }))

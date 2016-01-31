@@ -13,6 +13,6 @@ module.exports = ($) => {
             linenos: true
         }))
         .on('error', (error) => console.log(error))
-        .pipe($.gulp.dest($.deploy.styl))
+        .pipe($.gulp.dest($.deploy.css))
     )
 }
