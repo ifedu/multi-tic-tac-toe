@@ -1,0 +1,46 @@
+
+/* line 28 : C:\www\multi-tic-tac-toe\frontend\css\code\stylus\main.styl */
+
+/* line 1 : C:\www\multi-tic-tac-toe\tasks\gulp\node_modules\gulp-stylus\node_modules\stylus\lib\functions\index.styl */
+
+/* line 1 : C:\www\multi-tic-tac-toe\frontend\css\code\stylus\main.styl */
+* {
+  box-sizing: border-box;
+}
+
+/* line 4 : C:\www\multi-tic-tac-toe\frontend\css\code\stylus\main.styl */
+body {
+  font-family: arial;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+/* line 9 : C:\www\multi-tic-tac-toe\frontend\css\code\stylus\main.styl */
+body .table {
+  margin: auto;
+  text-align: center;
+  width: 300px;
+}
+
+/* line 14 : C:\www\multi-tic-tac-toe\frontend\css\code\stylus\main.styl */
+
+/* line 15 : C:\www\multi-tic-tac-toe\frontend\css\code\stylus\main.styl */
+body .table .row .square {
+  border: 1px solid #000;
+  cursor: pointer;
+  display: table-cell;
+  height: 100px;
+  vertical-align: middle;
+  width: 100px;
+}
+
+/* line 23 : C:\www\multi-tic-tac-toe\frontend\css\code\stylus\main.styl */
+body .table .row .square img {
+  max-height: 200px;
+  max-width: 200px;
+}
+
+/* line 27 : C:\www\multi-tic-tac-toe\frontend\css\code\stylus\main.styl */
+body .table .row .square img.hidden {
+  visibility: hidden;
+}
