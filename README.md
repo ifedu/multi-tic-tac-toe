@@ -4,9 +4,17 @@
 ### Juego 3 en raya(gato) multijugador, multilenguaje, multiplataforma.
 
 #### Empezar
-    - En tasks/gulp tenemos los siguientes comandos
-        - gulp jade-styl-jquery-php => Compila jade, stylus, jQuery y copia php a _deploy
-        - gulp jade-styl-vanillajs-php => Compila jade, stylus, vanillajs y copia php a _deploy
+    - Los npm install con sudo si estamos en unix
+    - npm install gulp -g
+    - En el raíz hacer npm install --save-dev babel-preset-es2015
+    - En tasks/gulp hacer npm install
+    - En tasks/gulp ejecutamos gulp run seguido de una serie de opciones:
+        - *(ejemplo: gulp run --back=php --css=stylus --html=jade --js=jquery --transpiler=babeljs)*
+        - --back=php
+        - --css=stylus
+        - --html=jade
+        - --js=jquery --js=vanillajs
+        - --transpiler=babeljs --transpiler=coffeescript --transpiler=typescript
 
 #### Guía
     - Carpetas que empiezan con _ se encuentran en desarrollo.
@@ -49,23 +57,43 @@
                 - stylus => *v.0.1.0*
 
         - html => Lenguajes
-                - _haml =>
-                - jade => *v.0.2.0*
+            - _haml =>
+            - jade => *v.0.1.0*
 
         - js => Lenguajes, librerías y Frameworks
+            - _vendor => Liberías de front
+            - babeljs
                 - _angularjs1 =>
                 - _angularjs2 =>
                 - _backbone =>
-                - _coffescript =>
                 - _ember =>
                 - _polymer =>
                 - _react =>
-                - _typescript =>
-                - _vendor => Liberías de front
-                - vanillajs => *v.0.2.0*
-                - jQuery => *v.0.2.0* **jquery-2.2.0**
+                - jQuery => *v.0.1.0* **jquery-2.2.0**
+                - vanillajs => *v.0.1.0*
+
+            - coffeescript
+                - _angularjs1 =>
+                - _angularjs2 =>
+                - _backbone =>
+                - _ember =>
+                - _polymer =>
+                - _react =>
+                - jQuery => *v.0.1.0* **jquery-2.2.0**
+                - vanillajs => *v.0.1.0*
+
+            - typescript
+                - _angularjs1 =>
+                - _angularjs2 =>
+                - _backbone =>
+                - _dts => *Definiciones de tipo*
+                - _ember =>
+                - _polymer =>
+                - _react =>
+                - jQuery => *v.0.1.0* **jquery-2.2.0**
+                - vanillajs => *v.0.1.0*
 
     - node_modules => Módulos necesarios en la raíz del proyecto
     - tasks => Automatizadores de tareas
         - _grunt =>
-        - gulp => *v.0.2.0*
+        - gulp => *v.0.1.0*

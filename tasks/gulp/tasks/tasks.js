@@ -1,11 +1,17 @@
 module.exports = ($) => {
     'use strict'
 
-    $.gulp.task('jade-styl-jquery-php', (cb) => {
-        $.jsonData.jQuery = true
+    $.gulp.task('run', (cb) => {
+        $.jsonData = {
+            configTask: {
+                back: $.yargs.back,
+                css: $.yargs.css,
+                html: $.yargs.html,
+                js: $.yargs.js,
+                transpiler: $.yargs.transpiler
+            }
+        }
 
-        $.runSequence('clean', ['jade', 'styl', 'js-jQuery', 'copy-php', 'copy-jQuery', 'copy-assets'], cb)
+        return $.runSequence('clean', ['html', 'css', 'js', 'copy'], 'watch', cb)
     })
-
-    $.gulp.task('jade-styl-vanillajs-php', (cb) => $.runSequence('clean', ['jade', 'styl', 'js-vanillajs', 'copy-php', 'copy-assets'], cb))
 }

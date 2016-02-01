@@ -4,6 +4,7 @@ module.exports = {
     // LIBS EXTERNAL
     babel: require('gulp-babel'),
     changed: require('gulp-changed'),
+    coffeescript: require('gulp-coffee'),
     data: require('gulp-data'),
     del: require('del'),
     extend: require('extend'),
@@ -11,6 +12,8 @@ module.exports = {
     jade: require('gulp-jade'),
     runSequence: require('run-sequence'),
     stylus: require('gulp-stylus'),
+    typescript: require('gulp-typescript'),
+    yargs: require('yargs').argv,
 
     // LIBS INTERNAL
     fs: require('fs'),
@@ -25,17 +28,30 @@ module.exports = {
         dir: './../..',
         jade: './../../frontend/html/jade',
 
+        // CSS
+        stylus: './../../frontend/css/code/stylus',
+
         // FRONT
-        jsJquery: './../../frontend/js/jQuery',
-        jsVanillajs: './../../frontend/js/vanillajs',
+        babeljs: {
+            jquery: './../../frontend/js/babeljs/jQuery',
+            vanillajs: './../../frontend/js/babeljs/vanillajs'
+        },
+
+        coffeescript: {
+            jquery: './../../frontend/js/coffeescript/jQuery',
+            vanillajs: './../../frontend/js/coffeescript/vanillajs'
+        },
+
+        typescript: {
+            jquery: './../../frontend/js/typescript/jQuery',
+            vanillajs: './../../frontend/js/typescript/vanillajs'
+        },
 
         // VENDOR
-        vendorJquery: './../../frontend/js/_vendor/jquery-2.2.0.min.js',
-
-        // BACK
-        php: './../../backend/php',
-
-        styl: './../../frontend/css/code/stylus'
+        vendor: {
+            jquery: './../../frontend/js/_vendor/jquery-2.2.0.min.js',
+            vanillajs: ''
+        }
     },
 
     deploy: {
@@ -43,7 +59,7 @@ module.exports = {
         assets: './../../_deploy/assets',
         css: './../../_deploy/css',
         dir: './../../_deploy',
-        jade: './../../_deploy',
+        html: './../../_deploy',
         js: './../../_deploy/js',
         jsVendor: './../../_deploy/js/vendor',
 

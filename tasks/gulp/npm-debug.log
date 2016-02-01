@@ -1,0 +1,100 @@
+0 info it worked if it ends with ok
+1 verbose cli [ 'C:\\Program Files\\nodejs\\node.exe',
+1 verbose cli   'C:\\Program Files\\nodejs\\node_modules\\npm\\bin\\npm-cli.js',
+1 verbose cli   'install',
+1 verbose cli   'babel-preset-2005',
+1 verbose cli   '--save' ]
+2 info using npm@2.14.2
+3 info using node@v4.0.0
+4 verbose install initial load of C:\www\multi-tic-tac-toe\tasks\gulp\package.json
+5 verbose installManyTop reading scoped package data from C:\www\multi-tic-tac-toe\tasks\gulp\node_modules\del\package.json
+6 verbose installManyTop reading scoped package data from C:\www\multi-tic-tac-toe\tasks\gulp\node_modules\extend\package.json
+7 verbose installManyTop reading scoped package data from C:\www\multi-tic-tac-toe\tasks\gulp\node_modules\gulp\package.json
+8 verbose installManyTop reading scoped package data from C:\www\multi-tic-tac-toe\tasks\gulp\node_modules\gulp-babel\package.json
+9 verbose installManyTop reading scoped package data from C:\www\multi-tic-tac-toe\tasks\gulp\node_modules\gulp-changed\package.json
+10 verbose installManyTop reading scoped package data from C:\www\multi-tic-tac-toe\tasks\gulp\node_modules\gulp-coffee\package.json
+11 verbose installManyTop reading scoped package data from C:\www\multi-tic-tac-toe\tasks\gulp\node_modules\gulp-data\package.json
+12 verbose installManyTop reading scoped package data from C:\www\multi-tic-tac-toe\tasks\gulp\node_modules\gulp-jade\package.json
+13 verbose installManyTop reading scoped package data from C:\www\multi-tic-tac-toe\tasks\gulp\node_modules\gulp-prompt\package.json
+14 verbose installManyTop reading scoped package data from C:\www\multi-tic-tac-toe\tasks\gulp\node_modules\gulp-stylus\package.json
+15 verbose installManyTop reading scoped package data from C:\www\multi-tic-tac-toe\tasks\gulp\node_modules\gulp-typescript\package.json
+16 verbose installManyTop reading scoped package data from C:\www\multi-tic-tac-toe\tasks\gulp\node_modules\run-sequence\package.json
+17 verbose installManyTop reading scoped package data from C:\www\multi-tic-tac-toe\tasks\gulp\node_modules\yargs\package.json
+18 info package.json gulp-coffee@2.3.1 No license field.
+19 verbose readDependencies loading dependencies from C:\www\multi-tic-tac-toe\tasks\gulp\package.json
+20 silly cache add args [ 'babel-preset-2005', null ]
+21 verbose cache add spec babel-preset-2005
+22 silly cache add parsed spec Result {
+22 silly cache add   raw: 'babel-preset-2005',
+22 silly cache add   scope: null,
+22 silly cache add   name: 'babel-preset-2005',
+22 silly cache add   rawSpec: '',
+22 silly cache add   spec: '*',
+22 silly cache add   type: 'range' }
+23 silly addNamed babel-preset-2005@*
+24 verbose addNamed "*" is a valid semver range for babel-preset-2005
+25 silly addNameRange { name: 'babel-preset-2005', range: '*', hasData: false }
+26 silly mapToRegistry name babel-preset-2005
+27 silly mapToRegistry using default registry
+28 silly mapToRegistry registry https://registry.npmjs.org/
+29 silly mapToRegistry uri https://registry.npmjs.org/babel-preset-2005
+30 verbose addNameRange registry:https://registry.npmjs.org/babel-preset-2005 not in flight; fetching
+31 verbose request uri https://registry.npmjs.org/babel-preset-2005
+32 verbose request no auth needed
+33 info attempt registry request try #1 at 20:17:12
+34 verbose request id 17960f80a94e28ae
+35 http request GET https://registry.npmjs.org/babel-preset-2005
+36 http 404 https://registry.npmjs.org/babel-preset-2005
+37 verbose headers { 'content-type': 'application/json',
+37 verbose headers   'cache-control': 'max-age=0',
+37 verbose headers   'content-length': '2',
+37 verbose headers   'accept-ranges': 'bytes',
+37 verbose headers   date: 'Mon, 01 Feb 2016 02:17:33 GMT',
+37 verbose headers   via: '1.1 varnish',
+37 verbose headers   age: '0',
+37 verbose headers   connection: 'keep-alive',
+37 verbose headers   'x-served-by': 'cache-dfw1829-DFW',
+37 verbose headers   'x-cache': 'MISS',
+37 verbose headers   'x-cache-hits': '0',
+37 verbose headers   'x-timer': 'S1454293053.085946,VS0,VE68' }
+38 silly get cb [ 404,
+38 silly get   { 'content-type': 'application/json',
+38 silly get     'cache-control': 'max-age=0',
+38 silly get     'content-length': '2',
+38 silly get     'accept-ranges': 'bytes',
+38 silly get     date: 'Mon, 01 Feb 2016 02:17:33 GMT',
+38 silly get     via: '1.1 varnish',
+38 silly get     age: '0',
+38 silly get     connection: 'keep-alive',
+38 silly get     'x-served-by': 'cache-dfw1829-DFW',
+38 silly get     'x-cache': 'MISS',
+38 silly get     'x-cache-hits': '0',
+38 silly get     'x-timer': 'S1454293053.085946,VS0,VE68' } ]
+39 verbose stack Error: Registry returned 404 for GET on https://registry.npmjs.org/babel-preset-2005
+39 verbose stack     at makeError (C:\Program Files\nodejs\node_modules\npm\node_modules\npm-registry-client\lib\request.js:263:12)
+39 verbose stack     at CachingRegistryClient.<anonymous> (C:\Program Files\nodejs\node_modules\npm\node_modules\npm-registry-client\lib\request.js:241:14)
+39 verbose stack     at Request._callback (C:\Program Files\nodejs\node_modules\npm\node_modules\npm-registry-client\lib\request.js:171:14)
+39 verbose stack     at Request.self.callback (C:\Program Files\nodejs\node_modules\npm\node_modules\request\request.js:198:22)
+39 verbose stack     at emitTwo (events.js:87:13)
+39 verbose stack     at Request.emit (events.js:172:7)
+39 verbose stack     at Request.<anonymous> (C:\Program Files\nodejs\node_modules\npm\node_modules\request\request.js:1073:14)
+39 verbose stack     at emitOne (events.js:82:20)
+39 verbose stack     at Request.emit (events.js:169:7)
+39 verbose stack     at IncomingMessage.<anonymous> (C:\Program Files\nodejs\node_modules\npm\node_modules\request\request.js:1019:12)
+40 verbose statusCode 404
+41 verbose pkgid babel-preset-2005
+42 verbose cwd C:\www\multi-tic-tac-toe\tasks\gulp
+43 error Windows_NT 10.0.10586
+44 error argv "C:\\Program Files\\nodejs\\node.exe" "C:\\Program Files\\nodejs\\node_modules\\npm\\bin\\npm-cli.js" "install" "babel-preset-2005" "--save"
+45 error node v4.0.0
+46 error npm  v2.14.2
+47 error code E404
+48 error 404 Registry returned 404 for GET on https://registry.npmjs.org/babel-preset-2005
+48 error 404
+48 error 404 'babel-preset-2005' is not in the npm registry.
+48 error 404 You should bug the author to publish it (or use the name yourself!)
+48 error 404 It was specified as a dependency of 'multi-tic-tac-toe'
+48 error 404
+48 error 404 Note that you can also install from a
+48 error 404 tarball, folder, http url, or git url.
+49 verbose exit [ 1, true ]
