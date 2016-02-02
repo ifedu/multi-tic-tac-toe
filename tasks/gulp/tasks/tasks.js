@@ -4,11 +4,11 @@ module.exports = ($) => {
     $.gulp.task('run', (cb) => {
         $.jsonData = {
             configTask: {
-                back: $.yargs.back,
-                css: $.yargs.css,
-                html: $.yargs.html,
-                js: $.yargs.js,
-                transpiler: $.yargs.transpiler
+                back: $.yargs.back || 'nodejs',
+                css: $.yargs.css || 'stylus',
+                html: $.yargs.html || 'jade',
+                js: $.yargs.js || 'jquery',
+                transpiler: $.yargs.transpiler || 'babeljs'
             }
         }
 

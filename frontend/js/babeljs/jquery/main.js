@@ -9,13 +9,13 @@ $(() => {
         $(this)
         .children()
         .removeClass('hidden')
-        .attr('src', `assets/${xo}.png`)
+        .attr('src', `assets/<%=$%>{xo}.png`)
 
         const request = {
             xo
         }
 
-        $.ajax('api/php/index.php', {
+        $.ajax('<%=server[back]%>', {
             method: 'POST',
 
             data: {

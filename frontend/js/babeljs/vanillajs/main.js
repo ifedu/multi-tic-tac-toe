@@ -11,12 +11,12 @@ document.addEventListener('DOMContentLoaded', () => {
 
             const elem = (e.target.tagName === 'IMG') ? e.target : e.target.children[0]
 
-            elem.setAttribute('src', `assets/${xo}.png`)
+            elem.setAttribute('src', `assets/<%=$%>{xo}.png`)
             elem.removeAttribute('class')
 
             const xhr = new XMLHttpRequest()
 
-            xhr.open('POST', encodeURI('api/php/index.php'))
+            xhr.open('POST', encodeURI('<%=server[back]%>'))
             xhr.setRequestHeader('Content-Type', 'application/x-www-form-urlencoded')
             xhr.onload = () => {
                 console.log(xhr.responseText)

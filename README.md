@@ -10,6 +10,7 @@
     - En tasks/gulp hacer npm install
     - En tasks/gulp ejecutamos gulp run seguido de una serie de opciones:
         - *(ejemplo: gulp run --back=php --css=stylus --html=jade --js=jquery --transpiler=babeljs)*
+        - *(Si se pone sólo gulp run toma los parámetros por defecto del ejemplo, localizados en tasks/gulp/tasks)*
         - --back=php
         - --css=stylus
         - --html=jade
@@ -29,10 +30,10 @@
 
     - backend => Lenguajes de lado de servidor
         - _java
-        - _nodejs
         - _python
         - _ruby
         - _tests => Tests TDD y BDD
+        - nodejs
         - php => *v.0.1.0*
 
     - design => Diseños y assets
@@ -96,4 +97,4 @@
     - node_modules => Módulos necesarios en la raíz del proyecto
     - tasks => Automatizadores de tareas
         - _grunt =>
-        - gulp => *v.0.1.0*
+        - gulp => *v.0.2.0*

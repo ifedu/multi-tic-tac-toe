@@ -16,7 +16,7 @@ document.addEventListener 'DOMContentLoaded', ->
 
             xhr = new XMLHttpRequest()
 
-            xhr.open('POST', encodeURI('api/php/index.php'))
+            xhr.open('POST', encodeURI('<%=server[back]%>'))
             xhr.setRequestHeader('Content-Type', 'application/x-www-form-urlencoded')
             xhr.onload = ->
                 console.log(xhr.responseText)

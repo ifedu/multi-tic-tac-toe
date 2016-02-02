@@ -1,3 +1,5 @@
 <?php
-    echo "El usuario pulso: $_POST[xo]"
+    $xo = (isset($_POST['xo'])) ? $_POST['xo'] : '';
+
+    echo "El usuario pulso: $xo";
 ?>

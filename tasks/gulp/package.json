@@ -13,6 +13,7 @@
     "gulp-data": "^1.2.1",
     "gulp-jade": "^1.1.0",
     "gulp-stylus": "^2.3.0",
+    "gulp-template": "^3.1.0",
     "gulp-typescript": "^2.10.0",
     "run-sequence": "^1.1.5",
     "yargs": "^3.32.0"

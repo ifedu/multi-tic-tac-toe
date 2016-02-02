@@ -1,3 +1,10 @@
+## v.0.2.0 core
+    - Añade nodejs
+    - Añade parámetros por defecto en gulp
+    - Añade gulp-template
+    - Mueve lo del servidor a una carpeta _server
+    - No se compilan los mixins
+
 ## v.0.1.0 core
     - Carcasa
 

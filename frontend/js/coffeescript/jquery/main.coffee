@@ -14,7 +14,7 @@ $ ->
         request =
             xo: xo
 
-        $.ajax('api/php/index.php', {
+        $.ajax('<%=server[back]%>', {
             method: 'POST',
 
             data: {

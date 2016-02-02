@@ -2,6 +2,7 @@ module.exports = ($) => {
     'use strict'
 
     $.gulp.task('js', () => {
+        const back = $.jsonData.configTask.back
         const js = $.jsonData.configTask.js
         const transpiler = $.jsonData.configTask.transpiler
 
@@ -23,6 +24,16 @@ module.exports = ($) => {
                 `!${$.dev[transpiler][js]}/**/_**/**/*`
             ])
             .pipe($.changed($.deploy.js))
+            .pipe($.template({
+                back,
+                $: '$',
+
+                server: {
+                    nodejs: 'api/nodejs/index.js',
+                    php: '/multi-tic-tac-toe-api/index.php'
+                }
+            }))
+            .pipe($.gulp.dest($.deploy.js))
             .pipe(jsTranspiler[transpiler]())
             .on('error', (error) => console.log(error))
             .pipe($.gulp.dest($.deploy.js))

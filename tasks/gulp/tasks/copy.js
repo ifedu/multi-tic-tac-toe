@@ -13,7 +13,7 @@ module.exports = ($) => {
         const js = $.jsonData.configTask.js
 
         $.gulp.task('copy-assets', copy(`${$.dev.assets}/**/*`, $.deploy.assets))
-        $.gulp.task('copy-back', copy(`${$.dev.back}/**/*.${back}`, $.deploy.api))
+        $.gulp.task('copy-back', copy(`${$.dev.back}/${back}/**/*`, `${$.deploy.server}/${back}`))
         $.gulp.task('copy-vendorjs', copy($.dev.vendor[js], $.deploy.jsVendor))
 
         return $.runSequence(['copy-assets', 'copy-back', 'copy-vendorjs'], cb)

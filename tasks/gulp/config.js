@@ -12,6 +12,7 @@ module.exports = {
     jade: require('gulp-jade'),
     runSequence: require('run-sequence'),
     stylus: require('gulp-stylus'),
+    template: require('gulp-template'),
     typescript: require('gulp-typescript'),
     yargs: require('yargs').argv,
 
@@ -55,16 +56,13 @@ module.exports = {
     },
 
     deploy: {
-        api: './../../_deploy/api',
         assets: './../../_deploy/assets',
         css: './../../_deploy/css',
         dir: './../../_deploy',
         html: './../../_deploy',
         js: './../../_deploy/js',
         jsVendor: './../../_deploy/js/vendor',
-
-        // BACK
-        php: './../../_deploy/api/php'
+        server: './../../_server'
     },
 
     jsonData: {},
