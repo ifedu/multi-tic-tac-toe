@@ -11,16 +11,15 @@ $ ->
         .removeClass('hidden')
         .attr('src', "assets/#{xo}.png")
 
-        request =
-            xo: xo
-
-        $.ajax('<%=server[back]%>', {
+        $.ajax({
+            contentType: 'application/json; charset=utf-8',
+            dataType: 'json',
             method: 'POST',
+            url: '<%=server[back]%>',
 
-            data: {
+            data: JSON.stringify({
                 xo
-            }
+            }),
+
+            complete: (data) -> console.log(data.responseText)
         })
-        .then((data) ->
-            console.log(data)
-        )

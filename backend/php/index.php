@@ -1,5 +1,6 @@
 <?php
-    $xo = (isset($_POST['xo'])) ? $_POST['xo'] : '';
+    $postData = file_get_contents('php://input');
+    $request = json_decode($postData);
 
-    echo "El usuario pulso: $xo";
+    echo "El usuario pulso: $request->xo";
 ?>

@@ -1,4 +1,4 @@
-/// <reference path='../_dts/jquery.d.ts' />
+// <reference path='jquery.d.ts' />
 
 'use strict'
 
@@ -13,19 +13,17 @@ $(() => {
         .removeClass('hidden')
         .attr('src', `assets/<%=$%>{xo}.png`)
 
-        const request = {
-            xo
-        }
-
-        $.ajax('<%=server[back]%>', {
+        $.ajax({
+            contentType: 'application/json; charset=utf-8',
+            dataType: 'json',
             method: 'POST',
+            url: '<%=server[back]%>',
 
-            data: {
+            data: JSON.stringify({
                 xo
-            }
-        })
-        .then(function success(data) {
-            console.log(data)
+            }),
+
+            complete: (data) => console.log(data.responseText)
         })
     })
 })

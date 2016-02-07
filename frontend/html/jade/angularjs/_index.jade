@@ -1,0 +1,30 @@
+include _row
+
+mixin index()
+    doctype html
+    html(
+        lang='es'
+        ng-app='multiTicTacToe'
+        ng-controler='ParentCtrl as parentCtrl')
+        head
+            meta(charset='utf-8')
+            title Multi-Tic-Tac-Toe
+            meta(
+                content=''
+                name='description')
+            //- link(
+            //-     href='favicon.ico'
+            //-     rel='shortcut icon')
+            link(
+                href='css/main.css'
+                rel='stylesheet' )
+        body
+            .table
+                +row()
+                +row()
+                +row()
+
+            script(src='js/vendor/angular-1.4.9.min.js')
+            script(src='js/main.js')
+            script(src='js/parentCtrl.js')
+            script(src='js/multiTicTacToe.js')

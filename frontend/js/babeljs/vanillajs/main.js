@@ -16,12 +16,12 @@ document.addEventListener('DOMContentLoaded', () => {
 
             const xhr = new XMLHttpRequest()
 
-            xhr.open('POST', encodeURI('<%=server[back]%>'))
-            xhr.setRequestHeader('Content-Type', 'application/x-www-form-urlencoded')
-            xhr.onload = () => {
-                console.log(xhr.responseText)
-            }
-            xhr.send(encodeURI(`xo=${xo}`))
+            xhr.open('POST', encodeURI('<%=server[back]%>'), true)
+            xhr.setRequestHeader('Content-type', 'application/json');
+            xhr.onload = () => console.log(xhr.responseText)
+            xhr.send(JSON.stringify({
+                xo
+            }))
         })
     }
 })

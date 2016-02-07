@@ -1,29 +1,6 @@
-include _row
+if (configTask.js === 'angularjs')
+    include angularjs/_index
+else
+    include default/_index
 
-doctype html
-html(lang='es')
-    head
-        meta(charset='utf-8')
-        title Multi-Tic-Tac-Toe
-        meta(
-            content=''
-            name='description'
-        )
-        //- link(
-        //-     href='favicon.ico'
-        //-     rel='shortcut icon'
-        //- )
-        link(
-            href='css/main.css'
-            rel='stylesheet'
-        )
-    body
-        .table
-            +row()
-            +row()
-            +row()
-
-        if (configTask.js === 'jquery')
-            script(src='js/vendor/jquery-2.2.0.min.js')
-
-        script(src='js/main.js')
++index()

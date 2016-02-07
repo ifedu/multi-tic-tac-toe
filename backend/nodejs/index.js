@@ -36,7 +36,7 @@ const server = http.createServer((req, res) => {
 
     if (type[1] === 'api') {
         req.on('data', function (data) {
-            res.write(`El usuario pulso: ${data}`)
+            res.write(`El usuario pulso: ${JSON.parse(data).xo}`)
         })
 
         res.writeHead(200, {'Content-Type': 'text/html'})
