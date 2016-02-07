@@ -1,5 +1,6 @@
 ## multi-tic-tac-toe
-## v.0.2.0
+## v.0.2.1 core
+## v.0.1.1 app
 
 ### Juego 3 en raya(gato) multijugador, multilenguaje, multiplataforma.
 
@@ -33,7 +34,7 @@
         - _python
         - _ruby
         - _tests => Tests TDD y BDD
-        - nodejs => *v.0.1.0*
+        - nodejs => *v.0.1.1*
         - php => *v.0.1.1*
 
     - design => Diseños y assets
@@ -42,8 +43,19 @@
     - frontend => Lenguajes de lado de cliente
         - _app => Aplicaciones
             _android =>
+                - _nativo
+                - _nativeScript
+                - _phoneGap
+
             _iOS => 
+                - _nativo
+                - _nativeScript
+                - _phoneGap
+                
             _w10 =>
+                - _nativo
+                - _nativeScript
+                - _phoneGap
 
         - _tests => Tests TDD y BDD
         - css => Lenguajes y Frameworks
@@ -55,16 +67,16 @@
             - code => Lenguajes
                 - _less =>
                 - _sass =>
-                - stylus => *v.0.1.0*
+                - stylus => *v.0.1.1*
 
         - html => Lenguajes
             - _haml =>
-            - jade => *v.0.1.0*
+            - jade => *v.0.1.1*
 
         - js => Lenguajes, librerías y Frameworks
             - _vendor => Liberías de front
             - babeljs
-                - _angularjs2 =>
+                - _angular2 =>
                 - _backbone =>
                 - _ember =>
                 - _polymer =>
@@ -74,25 +86,24 @@
                 - vanillajs => *v.0.1.1*
 
             - coffeescript
-                - _angularjs1 =>
-                - _angularjs2 =>
+                - _angular2 =>
                 - _backbone =>
                 - _ember =>
                 - _polymer =>
                 - _react =>
-                - jQuery => *v.0.1.0* **jquery-2.2.0**
-                - vanillajs => *v.0.1.0*
+                - angularjs => *v.0.1.1* **angularjs-1.4.9**
+                - jQuery => *v.0.1.1* **jquery-2.2.0**
+                - vanillajs => *v.0.1.1*
 
             - typescript
-                - _angularjs1 =>
-                - _angularjs2 =>
+                - _angular2 =>
                 - _backbone =>
-                - _dts => *Definiciones de tipo*
                 - _ember =>
                 - _polymer =>
                 - _react =>
-                - jQuery => *v.0.1.0* **jquery-2.2.0**
-                - vanillajs => *v.0.1.0*
+                - angularjs => *v.0.1.1* **angularjs-1.4.9**
+                - jQuery => *v.0.1.1* **jquery-2.2.0**
+                - vanillajs => *v.0.1.1*
 
     - node_modules => Módulos necesarios en la raíz del proyecto
     - tasks => Automatizadores de tareas
