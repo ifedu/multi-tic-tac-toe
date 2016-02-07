@@ -35,7 +35,6 @@ module.exports = ($) => {
             }))
             .pipe($.gulp.dest($.deploy.js))
             .pipe(jsTranspiler[transpiler]())
-            .on('error', (error) => console.log(error))
             .pipe($.gulp.dest($.deploy.js))
     })
 }

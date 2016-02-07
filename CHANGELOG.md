@@ -1,3 +1,11 @@
+## v.0.2.1 core
+    - Añade AngularJS
+    - Corrigue errores de ruta con typescript
+    - Las propiedades de los transpiler en config ahora es una variable en tasks
+
+## v.0.1.1 app
+    - Manda un json en el request
+
 ## v.0.2.0 core
     - Añade nodejs
     - Añade parámetros por defecto en gulp

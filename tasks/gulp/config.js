@@ -32,24 +32,9 @@ module.exports = {
         // CSS
         stylus: './../../frontend/css/code/stylus',
 
-        // FRONT
-        babeljs: {
-            jquery: './../../frontend/js/babeljs/jQuery',
-            vanillajs: './../../frontend/js/babeljs/vanillajs'
-        },
-
-        coffeescript: {
-            jquery: './../../frontend/js/coffeescript/jQuery',
-            vanillajs: './../../frontend/js/coffeescript/vanillajs'
-        },
-
-        typescript: {
-            jquery: './../../frontend/js/typescript/jQuery',
-            vanillajs: './../../frontend/js/typescript/vanillajs'
-        },
-
         // VENDOR
         vendor: {
+            angularjs: './../../frontend/js/_vendor/angular-1.4.9.min.js',
             jquery: './../../frontend/js/_vendor/jquery-2.2.0.min.js',
             vanillajs: ''
         }
@@ -64,8 +49,6 @@ module.exports = {
         jsVendor: './../../_deploy/js/vendor',
         server: './../../_server'
     },
-
-    jsonData: {},
 
     extendJsonData(file) {
         const fileJade = this.path.basename(file.path, '.jade')

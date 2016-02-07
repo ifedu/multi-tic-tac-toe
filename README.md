@@ -33,8 +33,8 @@
         - _python
         - _ruby
         - _tests => Tests TDD y BDD
-        - nodejs
-        - php => *v.0.1.0*
+        - nodejs => *v.0.1.0*
+        - php => *v.0.1.1*
 
     - design => Diseños y assets
         - assets => Imágenes del proyecto
@@ -64,14 +64,14 @@
         - js => Lenguajes, librerías y Frameworks
             - _vendor => Liberías de front
             - babeljs
-                - _angularjs1 =>
                 - _angularjs2 =>
                 - _backbone =>
                 - _ember =>
                 - _polymer =>
                 - _react =>
-                - jQuery => *v.0.1.0* **jquery-2.2.0**
-                - vanillajs => *v.0.1.0*
+                - angularjs => *v.0.1.1* **angularjs-1.4.9**
+                - jQuery => *v.0.1.1* **jquery-2.2.0**
+                - vanillajs => *v.0.1.1*
 
             - coffeescript
                 - _angularjs1 =>
