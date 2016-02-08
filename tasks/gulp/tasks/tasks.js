@@ -2,14 +2,12 @@ module.exports = ($) => {
     'use strict'
 
     $.gulp.task('run', (cb) => {
-        $.jsonData = {
-            configTask: {
-                back: $.yargs.back || 'php',
-                css: $.yargs.css || 'stylus',
-                html: $.yargs.html || 'jade',
-                js: $.yargs.js || 'angularjs',
-                transpiler: $.yargs.transpiler || 'babeljs'
-            }
+        $.jsonData.configTask = {
+            back: $.yargs.back || 'php',
+            css: $.yargs.css || 'stylus',
+            html: $.yargs.html || 'jade',
+            js: $.yargs.js || 'polymer',
+            transpiler: $.yargs.transpiler || 'babeljs'
         }
 
         // FRONT

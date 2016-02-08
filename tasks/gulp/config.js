@@ -28,16 +28,10 @@ module.exports = {
         back: './../../backend',
         dir: './../..',
         jade: './../../frontend/html/jade',
+        jsVendor: './../../frontend/js/_vendor',
 
         // CSS
-        stylus: './../../frontend/css/code/stylus',
-
-        // VENDOR
-        vendor: {
-            angularjs: './../../frontend/js/_vendor/angular-1.4.9.min.js',
-            jquery: './../../frontend/js/_vendor/jquery-2.2.0.min.js',
-            vanillajs: ''
-        }
+        stylus: './../../frontend/css/code/stylus'
     },
 
     deploy: {
@@ -50,6 +44,8 @@ module.exports = {
         server: './../../_server'
     },
 
+    jsonData: {},
+
     extendJsonData(file) {
         const fileJade = this.path.basename(file.path, '.jade')
 
@@ -58,9 +54,9 @@ module.exports = {
 
         const jsonData = (this.fs.existsSync(route)) ? require(route) : {}
 
-        this.extend(true, this.jsonData, jsonData)
+        this.extend(true, jsonData, this.jsonData)
 
-        return this.jsonData
+        return jsonData
     },
 
     readTasks() {

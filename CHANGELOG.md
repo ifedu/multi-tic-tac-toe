@@ -1,3 +1,7 @@
+## v.0.2.2 core
+    - Añade Polymer
+    - Simplifica los vendorjs
+
 ## v.0.2.1 core
     - Añade AngularJS
     - Corrigue errores de ruta con typescript
