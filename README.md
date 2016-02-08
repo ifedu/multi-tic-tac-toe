@@ -1,5 +1,5 @@
 ## multi-tic-tac-toe
-## v.0.2.1 core
+## v.0.2.2 core
 ## v.0.1.1 app
 
 ### Juego 3 en raya(gato) multijugador, multilenguaje, multiplataforma.
@@ -79,10 +79,10 @@
             - _angular2 =>
             - _backbone =>
             - _ember =>
-            - _polymer =>
             - _react =>
             - **angularjs** => *v.0.1.1* *angularjs-1.4.9*
             - **jQuery** => *v.0.1.1* *jquery-2.2.0*
+            - **polymer** => *v.0.1.1* *polimer-1.0*
             - **vanillajs** => *v.0.1.1*
 
         - **coffeescript**

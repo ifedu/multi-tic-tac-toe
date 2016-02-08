@@ -14,7 +14,7 @@ module.exports = ($) => {
 
         $.gulp.task('copy-assets', copy(`${$.dev.assets}/**/*`, $.deploy.assets))
         $.gulp.task('copy-back', copy(`${$.dev.back}/${back}/**/*`, `${$.deploy.server}/${back}`))
-        $.gulp.task('copy-vendorjs', copy($.dev.vendor[js], $.deploy.jsVendor))
+        $.gulp.task('copy-vendorjs', copy(`${$.dev.jsVendor}/${js}/**/*`, `${$.deploy.jsVendor}`))
 
         return $.runSequence(['copy-assets', 'copy-back', 'copy-vendorjs'], cb)
     })

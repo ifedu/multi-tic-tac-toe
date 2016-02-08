@@ -17,7 +17,7 @@ document.addEventListener 'DOMContentLoaded', ->
             xhr = new XMLHttpRequest()
 
             xhr.open('POST', encodeURI('<%=server[back]%>'), true)
-            xhr.setRequestHeader('Content-type', 'application/json');
+            xhr.setRequestHeader('Content-type', 'application/json')
             xhr.onload = -> console.log(xhr.responseText)
             xhr.send(JSON.stringify({
                 xo
