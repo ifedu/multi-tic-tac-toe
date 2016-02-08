@@ -1,0 +1,25 @@
+link(
+    href='../js/vendor/polymer.html'
+    rel='import')
+
+dom-module#mttt-square
+    style.
+        .square {
+            border: 1px solid #000;
+            cursor: pointer;
+            display: table-cell;
+            height: 100px;
+            vertical-align: middle;
+            width: 100px;
+        }
+
+        img {
+            max-height: 100px;
+            max-width: 100px;
+        }
+
+        .hidden {
+            visibility: hidden;
+        }
+
+    include _mttt-square/index.jade
