@@ -42,17 +42,17 @@
 
 - **frontend** => Lenguajes de lado de cliente
     - _app => Aplicaciones
-        _android =>
+        - _android =>
             - _nativo
             - _nativeScript
             - _phoneGap
 
-        _iOS => 
+        - _iOS => 
             - _nativo
             - _nativeScript
             - _phoneGap
 
-        _w10 =>
+        - _w10 =>
             - _nativo
             - _nativeScript
             - _phoneGap
